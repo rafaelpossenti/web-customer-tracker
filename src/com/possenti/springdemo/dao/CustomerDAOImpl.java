@@ -19,7 +19,6 @@ public class CustomerDAOImpl implements CustomerDAO {
 	private SessionFactory  sessionFactory;
 	
 	@Override
-	@Transactional //with this annotation doesn't need the commit and begins transaction
 	public List<Customer> getCustomers() {
 		
 		//get the current Hibernate session

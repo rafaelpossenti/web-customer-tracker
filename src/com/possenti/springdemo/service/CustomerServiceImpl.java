@@ -22,4 +22,10 @@ public class CustomerServiceImpl implements CustomerService{
 		return customerDAO.getCustomers();
 	}
 
+	@Override
+	@Transactional //with this annotation doesn't need the commit and begins transaction
+	public void saveCustomer(Customer customer) {
+		customerDAO.saveCustomer(customer);
+	}
+
 }

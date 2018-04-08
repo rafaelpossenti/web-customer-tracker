@@ -70,6 +70,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		
 	}
 
+
 	@Override
 	public List<Customer> searchCustomers(String searchName) {
 		
